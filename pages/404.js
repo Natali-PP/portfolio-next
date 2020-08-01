@@ -47,15 +47,11 @@ const NotFoundPage = () => {
   const isBrowser = typeof window !== "undefined";
   return (
     <Main>
-      <Navbar>
-        <Layout />
-      </Navbar>
       { isBrowser && (
         <StyledCuadrados>
           <LoadableCuadrado />
         </StyledCuadrados>
       )}
-      <SEO title="404: Not found" />
       <Text>
         <h1>NOT FOUND</h1>
         <Center><p>You just hit a route that doesn&#39;t exist... the sadness.</p></Center>

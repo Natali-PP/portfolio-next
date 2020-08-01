@@ -26,7 +26,6 @@ const SocialMail = styled.div`
 `
 const Contact = () => {
     return (
-        <Layout>
             <StyledContact>
               <h2>Contact me at</h2>
               <SocialMail>
@@ -36,7 +35,6 @@ const Contact = () => {
               <Social link="https://twitter.com/Envido3" text="Twitter" />       
             </StyledContact>
 
-        </Layout>
     )
 }
 
