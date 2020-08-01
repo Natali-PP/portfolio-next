@@ -1,10 +1,13 @@
 // import App from 'next/app'
 import "../public/main.css"
+import '../public/navbar.css';
 //import ProyectButtonUrl from "./components/ProyectButtonUrl"
-//import NavBar from './components/navbar.js'
+import NavBar from '../components/navbar.js'
+
 function MyApp({ Component, pageProps }) {
     return (
       <>
+        <NavBar />
         <Component {...pageProps} />
       </>
     )
