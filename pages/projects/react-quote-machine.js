@@ -2,8 +2,13 @@ import React from "react"
 //import Layout from "../../components/layout"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
 
-const ReactDrumMachine = props => (
+const StyledImg = styled.img`
+  max-width:85%;
+`
+const ReactDrumMachine = () => {
+  return (
         <div className="flex-project">
             <h1>React Random Quote</h1>
             <h2>React, JS, CSS, HTML, Figma</h2>
@@ -11,18 +16,8 @@ const ReactDrumMachine = props => (
                 <ProyectButtonUrl url="https://natali-pp.github.io/FCC-random-quote-machine/" />
                 <ButtonGithub url="https://github.com/Natali-PP/FCC-random-quote-machine" />
             </div>
+          <StyledImg  src="/projects/random-quote-machine.png" />
                 <p>I've build this proyect following FreeCodeCamp's Curriculum, using React hooks</p>
-
-                {/* <h4>Tecnologies used 💫</h4>
-                <ul>
-                    <li>MongoDb - MongoAtlas</li>
-                    <li>Express</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>Axion</li>
-                    <li>Material-UI && Material-UI Pickers</li>
-                </ul> */}
-
                 <p>This project was bootstrapped with <b>Create React App</b>.</p>
                 {/* <h4> Funtionalities</h4>
                     <ul>
@@ -36,7 +31,7 @@ const ReactDrumMachine = props => (
             </div>
         
         
-)
+)}
 
 export default ReactDrumMachine;
 

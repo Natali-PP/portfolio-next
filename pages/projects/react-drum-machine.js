@@ -1,6 +1,11 @@
 import React from "react"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
+
+const StyledImg = styled.img`
+  max-width:85%;
+`
 
 const ReactDrumMachine = props => (
 
@@ -11,13 +16,7 @@ const ReactDrumMachine = props => (
                 <ProyectButtonUrl url="natali-pp.github.io/fcc-drum-machine/ " />
                 <ButtonGithub url="https://github.com/Natali-PP/FCC-drum-machine" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-            
-
+          <StyledImg  src="/projects/react-drum-machine.png"  />
                 <p>I've build this proyect following FreeCodeCamp's Curriculum, using React hooks</p>
 
                 {/* <h4>Tecnologies used 💫</h4>

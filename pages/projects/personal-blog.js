@@ -1,6 +1,11 @@
 import React from "react"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
+
+const StyledImg = styled.img`
+  max-width:85%;
+`
 
 const PersonalBlogHugo = props => (
         <div className="flex-project">
@@ -10,13 +15,7 @@ const PersonalBlogHugo = props => (
                 <ProyectButtonUrl url="https://natali-pp.github.io/drum-kit/" />
                 <ButtonGithub url="https://github.com/Natali-PP/drum-kit" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-
-            
+          <StyledImg src="/projects/personal-blog-hugo.png"  />
             <p>Personal blog using Hugo and Go</p>
         </div>
 

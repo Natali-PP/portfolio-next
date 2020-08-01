@@ -1,6 +1,10 @@
 import React from "react"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
 
+const StyledImg = styled.img`
+  max-width:85%;
+`
 const ReactPomodoroClock = props => (
         <div className="flex-project">
             <h1>React Pomodoro Clock</h1>
@@ -8,13 +12,7 @@ const ReactPomodoroClock = props => (
             <div className="flex-dir-row">
                 <ButtonGithub url="https://github.com/Natali-PP/FCC-pomodoro-clock" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-            
-
+          <StyledImg  src="/projects/pomodoro-clock.png" />
                 <p>Little webapp for the pomodoro technique for time managment, where you can set up the timer for the session and break.</p>
                 <p>This is a challenge to obtain frecodecamp's Frontend Libraries certificate</p>
 

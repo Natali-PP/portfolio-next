@@ -1,7 +1,11 @@
 import React from "react"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl.js"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
 
+const StyledLogo = styled.img`
+  max-width:85%;
+`
 const animatedCityLanding = props => (
         <div className="flex-project">
             <h1>Animated City Landing</h1>
@@ -10,11 +14,8 @@ const animatedCityLanding = props => (
                 <ProyectButtonUrl url="https://natali-pp.github.io/future-city-animated/" />
                 <ButtonGithub url="https://github.com/Natali-PP/future-city-animated" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
+          <StyledLogo src="/projects/animated-city.png" />
+          
         </div>
 )
 

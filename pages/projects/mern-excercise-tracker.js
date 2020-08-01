@@ -1,5 +1,10 @@
 import React from "react"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
+
+const StyledImg = styled.img`
+  max-width:85%;
+`
 
 const MERNTracker = props => (
 
@@ -9,13 +14,7 @@ const MERNTracker = props => (
             <div className="flex-dir-row">
                 <ButtonGithub url="https://github.com/Natali-PP/exercise-tracker-mern" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-            
-
+          <StyledImg  src="/projects/mern-tracker.png" />
                 <p>I've build this proyect following FreeCodeCamp's youtube video, but changing it from class based components in React to hooks, and instead of bootstrap, i've used Material-ui as React UI framework</p>
 
                 <h4>Tecnologies used 💫</h4>

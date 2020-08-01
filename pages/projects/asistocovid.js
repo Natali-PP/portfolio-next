@@ -1,25 +1,22 @@
 import React from "react"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl"
 import Link from 'next/link'
+import styled from "styled-components"
 
+const StyledLogo = styled.img`
+  max-width:50%;
+`
+const StyledImg = styled.img`
+  max-width:85%;
+`
 const Asistovid = props => (
         <div className="flex-project">
-           {/*  <Img 
-                fixed={props.data.asistoTitle.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-
+          <StyledLogo src="/projects/asistoCovid-cover-transparente.png" alt="" />
             <h2>React, Angular, JS, CSS, HTML, Figma</h2>
 
             <ProyectButtonUrl url="https://asistocovid.com.ar/#/" ></ProyectButtonUrl>
+          <StyledImg src="/projects/asistocovid.png" />
             
-            {/* <Img 
-                fixed={props.data.asistovidPage.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
-
             <p>It is a virtual assistant that answers frequently asked questions about the coronavirus in Argentina.</p>
             <p>Together with collaborators, we created a virtual assistant to answer questions about the coronavirus and the measures that the Argentine government is taking in this regard.</p>
 

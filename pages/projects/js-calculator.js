@@ -1,6 +1,11 @@
 import React from "react"
 import ProyectButtonUrl from "../../components/ProyectButtonUrl"
 import ButtonGithub from "../../components/ProyectGithub"
+import styled from "styled-components"
+
+const StyledImg = styled.img`
+  max-width:85%;
+`
 
 const JSCalculator = props => (
         <div className="flex-project">
@@ -10,11 +15,7 @@ const JSCalculator = props => (
                 <ProyectButtonUrl url="https://natali-pp.github.io/FCC-calculator/" />
                 <ButtonGithub url="https://github.com/Natali-PP/FCC-calculator" />
             </div>
-{/*             <Img 
-                fixed={props.data.image.childImageSharp.fixed} 
-                objectFit="cover"
-                objectPosition="50% 50%"
-            /> */}
+          <StyledImg  src="/projects/calculator.png" />
 
             <p> React calculator using hooks, for the FCC's front end libraries certification </p>
         </div>

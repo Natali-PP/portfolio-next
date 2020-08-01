@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
 const StyledLink = styled(Link)`
   color: var(--blue);
   text-align:center;
-  font-size:4rem;
+  font-size:10rem;
   font-family: 'Alata', sans-serif;
   text-transform:uppercase;
 `
@@ -65,6 +65,9 @@ const FlexContainerColumnCenter = styled.div`
         font-family: 'Roboto';
         background-color:var(--yellow);
     }
+    img {
+      max-width:50%;
+    }
 `
 
 const CuadradosStyled = styled.div `
@@ -84,8 +87,10 @@ const Text = styled.div`
   display: inline-block;
   top: 50%;
   transform: translate3d(0, -50%, 0);
-  left: 30%;
+  left: 15%;
   z-index:200;
+  font-size:4rem;
+  color: var(--blue);
 `
 const Center = styled.div`
   text-align:center;
@@ -166,8 +171,8 @@ const GridIntro = () => {
         <p>I search to balance function and form</p>                              
         <p>The technologies that I use are <span className="bold">HTML, CSS, Javascript, React</span> and <span                    
           className="bold">Node.</span></p>         
-        <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><span   
-          className="bold bold-blue">let’s talk!</span></Link></p>                         
+        <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><a><span   
+          className="bold bold-blue">let’s talk!</span></a></Link></p>                         
       </section>                                                             
     </section>
 
@@ -192,36 +197,29 @@ export default function Home(props) {
             <section>
                 <h1>Some proyects</h1>
                 <Link href="projects/asistocovid">
-                    <FlexContainerColumnCenter>
+                  <a><FlexContainerColumnCenter>
                         <PreviewProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
-                        {/* <Img 
-                            fixed={props.data.imageOne.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                    </FlexContainerColumnCenter>
+                    <img src="/projects/asistocovid.png" alt="asistocovid-image" />
+                  </FlexContainerColumnCenter></a>
                 </Link>
 
                 <Link href="projects/animated-city-landing">
-                    <FlexContainerColumnCenter>
+                  <a><FlexContainerColumnCenter>
+                    <img src="/projects/animated-city.png" alt="animated-city-landing-image" />
                         {/* <Img 
                             fixed={props.data.imageTwo.childImageSharp.fixed} 
                             objectFit="cover"
                             objectPosition="50% 50%"
                         /> */}
                         <PreviewProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
-                    </FlexContainerColumnCenter>
+                  </FlexContainerColumnCenter></a>
                 </Link>
 
                 <Link href="projects/mern-excercise-tracker">
-                    <FlexContainerColumnCenter>
+                  <a><FlexContainerColumnCenter>
                         <PreviewProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
-                       {/*  <Img 
-                            fixed={props.data.imageThree.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                    </FlexContainerColumnCenter>
+                    <img src="/projects/mern-tracker.png" />
+                  </FlexContainerColumnCenter></a>
                 </Link>
                 <Main>
                   <Text><StyledLink href="projects">Click here to see all my proyects</StyledLink></Text>
@@ -234,7 +232,7 @@ export default function Home(props) {
             </section>
 
             <SiteDescriptionSection>
-                <h6>This site was built with GatsbyJS, React, ThreeJS, CSS Grids and Flexbox!</h6>
+                <h6>This site was built with NextJs, React, ThreeJs, CSS Grids and Flexbox!</h6>
                 <h6>It's fully responsive and mobile-friendly</h6>
             </SiteDescriptionSection>
             

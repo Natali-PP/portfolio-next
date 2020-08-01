@@ -26,7 +26,9 @@ const ProyectsGrid = styled.div`
         background-color:#FDC403;
     }
 `
-
+const StyledImgProject = styled.img`
+  max-width:100%;
+`
 const ProyectText = props => (
     <div>
         <h1>{props.title}</h1>
@@ -40,132 +42,98 @@ const Projects = props => (
 
         <ProyectsGrid>
             <Link href="./projects/asistocovid">
+              <a>
                 <div>
                     <ProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
-
+                <StyledImgProject src="/projects/asistocovid.png" />
                 </div>
+              </a>
             </Link>
 
             <Link href="./projects/animated-city-landing">
+              <a>
                 <div>
-                    <ProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
-
+                  <ProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
+                  <StyledImgProject src="/projects/animated-city.png" />
                 </div>
+              </a>
             </Link>
 
             <Link href="./projects/mern-excercise-tracker">
+              <a>
                 <div>
-                    <ProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
-
+                  <ProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
+                  <StyledImgProject src="/projects/mern-tracker.png" />
                 </div>
+              </a>
             </Link>
 
             <Link href="./projects/react-drum-machine">
-            <div>
+              <a><div>
                 <ProyectText title="React Drum Machine" tecn="React, JS, CSS, HTML, Figma"/>
-{/*                 <Img 
-                        fixed={props.data.imageReactDrum.childImageSharp.fixed} 
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                    /> */}
-            </div>
+                <StyledImgProject src="/projects/react-drum-machine.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/react-quote-machine">
-                <div>
+              <a><div>
                     <ProyectText title="React Random Quote" tecn="React, JS, CSS, HTML, Figma"/>
- {/*                    <Img 
-                            fixed={props.data.imageQuoteMachine.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                </div>
+                <StyledImgProject src="/projects/random-quote-machine.png" />
+              </div></a>
             </Link>
             <Link href="./projects/react-pomodoro-clock">
-                <div>
+              <a><div>
                     <ProyectText title="React Pomodoro Clock" tecn="React, JS, CSS, HTML"/>
-{/*                     <Img 
-                            fixed={props.data.imagePomodoro.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                </div>
+                <StyledImgProject src="/projects/pomodoro-clock.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/bootcamp-met">
-                <div>
+              <a><div>
                     <ProyectText title="MeT's Bootcamp Landing" tecn="JS, CSS, HTML, Zeplin"/>
-  {/*                   <Img 
-                            fixed={props.data.imageBootcampWeb.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                </div>
+                <StyledImgProject src="/projects/bootcamp-web-met.png" />
+              </div></a>
             </Link>
             <Link href="./projects/drum-vainilla-js">
-                <div>
+              <a><div>
                     <ProyectText title="JS Drum Machine" tecn="JS, CSS, HTML"/>
-{/*                     <Img 
-                            fixed={props.data.imageDrumVainilla.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-            </div>
+                <StyledImgProject src="/projects/little-drum-vainillajs.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/personal-blog">
-                <div>
+              <a><div>
                     <ProyectText title="Personal Blog" tecn="Hugo, Go"/>
-{/*                     <Img 
-                            fixed={props.data.imageBlogHugo.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                </div>
+                <StyledImgProject src="/projects/personal-blog-hugo.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/js-calculator">
-            <div>
+              <a><div>
                 <ProyectText title="React Calculator" tecn="React, JS, CSS, HTML"/>
-{/*                 <Img 
-                        fixed={props.data.imageCalculator.childImageSharp.fixed} 
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                    /> */}
-            </div>
+                <StyledImgProject src="/projects/calculator.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/grid-layout-css">
-            <div>
+              <a><div>
                 <ProyectText title="Grid Layout Blog" tecn="CSS, HTML"/>
-{/*                 <Img 
-                        fixed={props.data.imageGridBlog.childImageSharp.fixed} 
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                    /> */}
-            </div>
+                <StyledImgProject src="/projects/gridblog.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/taco-bar">
-            <div>
+              <a><div>
                 <ProyectText title="Taco Bar Layout" tecn="CSS, HTML"/>
-{/*                 <Img 
-                        fixed={props.data.imageTacoBar.childImageSharp.fixed} 
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                    /> */}
-            </div>
+                <StyledImgProject src="/projects/taco-bar.png" />
+              </div></a>
             </Link>
 
             <Link href="./projects/js-documentation-page">
-            <div>
+              <a><div>
                 <ProyectText title="Javascript Documentation Page" tecn="CSS, HTML"/>
-  {/*               <Img 
-                        fixed={props.data.imageJSDoc.childImageSharp.fixed} 
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                    /> */}
-            </div>
+                <StyledImgProject src="/projects/js-documentation.png" />
+              </div></a>
             </Link>
 
         </ProyectsGrid>
