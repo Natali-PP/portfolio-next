@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 //import Cuadrados3D from '../components/Cuadrados3D'
 import Loadable from "react-loadable"
@@ -18,23 +18,10 @@ const LoadableCuadrado = Loadable({
  loader : () => import('../components/Cuadrados3D.js'), // imports the component with the three.js and allows use of it safely
  loading: loader,
 })
-const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&family=Roboto:wght@400;700&display=swap');
-    :root{
-        --red: #E3001C;
-        --yellow: #FDC403;
-        --blue: #02519E;
-        --ligth-blue: #8FA4B9;
-        --pink:#DC4596;
-        --orange:#F05632;
-    }
 
-`
 
 const StyledLink = styled(Link)`
-  color: var(--blue);
-  text-align:center;
-  font-size:10rem;
+  color: var(--blue-line);
   font-family: 'Alata', sans-serif;
   text-transform:uppercase;
 `
@@ -53,6 +40,7 @@ const FlexContainerColumnCenter = styled.div`
     justify-content:center;
     align-items:center;
     margin: 3.5rem 0;
+  overflow:hidden;
     div {
         margin: 0 2rem;
         text-align: center;
@@ -63,23 +51,25 @@ const FlexContainerColumnCenter = styled.div`
     h2 {
         font-size:1.25rem;
         font-family: 'Roboto';
-        background-color:var(--yellow);
+        background-color:var(--yelow-line);
     }
     img {
       max-width:50%;
     }
 `
 
-const CuadradosStyled = styled.div `
-  width:auto;
-  height:90vh;
-  overflow:auto;
-  margin-left: 3.15rem;
+const CuadradosStyled = styled.div`
+  width:100vw !important;
+  height:100vh !important;
+  overflow:hidden !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
 `
 const Main = styled.div`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 99vw;
+  height: 99vh;
   overflow: hidden;
 `
 const Text = styled.div`
@@ -87,35 +77,20 @@ const Text = styled.div`
   display: inline-block;
   top: 50%;
   transform: translate3d(0, -50%, 0);
-  left: 15%;
+  left: 7%;
   z-index:200;
-  font-size:4rem;
-  color: var(--blue);
+  font-size:6vw;
+  color: var(--blue-line);
+  @media (min-width: 900px){
+    font-size:5vw;
+    left:15%;
+  }
 `
 const Center = styled.div`
   text-align:center;
 `
 
-const StyledCuadrados = styled.div`
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-`
 
-//const ProyectRepeat = () => {
-//  const {width} = useWindowSize();
-//  if ( width >= 600){
-//    return (
-//      <h1 className="portfolio">Portfolio <br />Portfolio <br/> Portfolio <br/></h1>
-//    )
-//  } else {
-//    return(
-//      <h1 className="portfolio">Portfolio <br /></h1>
-//    )
-//  }
-//}
 
 class ProyectRepeat extends React.Component {
   render() {
@@ -188,54 +163,49 @@ const GridIntro = () => {
 } */
 
 export default function Home(props) {
-    const isBrowser = typeof window !== "undefined";
-    return (
-        <>
-            <GlobalStyles />
-            <GridIntro />
-            
-            <section>
-                <h1>Some proyects</h1>
-                <Link href="projects/asistocovid">
-                  <a><FlexContainerColumnCenter>
-                        <PreviewProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
-                    <img src="/projects/asistocovid.png" alt="asistocovid-image" />
-                  </FlexContainerColumnCenter></a>
-                </Link>
+  const isBrowser = typeof window !== "undefined";
+  return (
+    <>
+      <GridIntro />
 
-                <Link href="projects/animated-city-landing">
-                  <a><FlexContainerColumnCenter>
-                    <img src="/projects/animated-city.png" alt="animated-city-landing-image" />
-                        {/* <Img 
-                            fixed={props.data.imageTwo.childImageSharp.fixed} 
-                            objectFit="cover"
-                            objectPosition="50% 50%"
-                        /> */}
-                        <PreviewProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
-                  </FlexContainerColumnCenter></a>
-                </Link>
+      <section>
+        <h1>Some proyects</h1>
+        <Link href="projects/asistocovid">
+          <a><FlexContainerColumnCenter>
+            <PreviewProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
+            <img src="/projects/asistocovid.png" alt="asistocovid-image" />
+          </FlexContainerColumnCenter></a>
+        </Link>
 
-                <Link href="projects/mern-excercise-tracker">
-                  <a><FlexContainerColumnCenter>
-                        <PreviewProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
-                    <img src="/projects/mern-tracker.png" />
-                  </FlexContainerColumnCenter></a>
-                </Link>
-                <Main>
-                  <Text><StyledLink href="projects">Click here to see all my proyects</StyledLink></Text>
-                  { isBrowser && (
-                     <CuadradosStyled>
-                       <LoadableCuadrado />
-                     </CuadradosStyled>
-                  )}               
-                </Main>
-            </section>
+        <Link href="projects/animated-city-landing">
+          <a><FlexContainerColumnCenter>
+            <img src="/projects/animated-city.png" alt="animated-city-landing-image" />
+            <PreviewProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
+          </FlexContainerColumnCenter></a>
+        </Link>
 
-            <SiteDescriptionSection>
-                <h6>This site was built with NextJs, React, ThreeJs, CSS Grids and Flexbox!</h6>
-                <h6>It's fully responsive and mobile-friendly</h6>
-            </SiteDescriptionSection>
-            
+        <Link href="projects/mern-excercise-tracker">
+          <a><FlexContainerColumnCenter>
+            <PreviewProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
+            <img src="/projects/mern-tracker.png" />
+          </FlexContainerColumnCenter></a>
+        </Link>
+        <Main>
+          { isBrowser && (
+            <CuadradosStyled>
+              <LoadableCuadrado />
+            </CuadradosStyled>
+          )}                               
+          <Text><StyledLink href="projects">Click here to see all my proyects</StyledLink></Text>
+
+        </Main>
+      </section>
+
+      <SiteDescriptionSection>
+        <h6>This site was built with NextJs, React, ThreeJs, CSS Grids and Flexbox!</h6>
+        <h6>It's fully responsive and mobile-friendly</h6>
+      </SiteDescriptionSection>
+
 
     </>
-)};
+  )};

@@ -15,42 +15,41 @@ const Main = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  canvas {
-    margin-left:3rem;
-  }
 `
 const Text = styled.div`
   position: absolute;
   display: inline-block;
-  width: 500px;
   top: 50%;
   transform: translate3d(0, -50%, 0);
-  left: 30%;
-  line-height: 1em;
+  left: 17%;
+  z-index:200;
+  font-size:5vw;
+  color: var(--blue);
+  @media (min-width: 900px){
+    font-size:2vw;
+    left:25%;
+  }
 `
 const Center = styled.div`
   text-align:center;
 `
 
-const StyledCuadrados = styled.div`
-  width: 100vw;
-  height: 100vh;
-  padding-left: 1rem;
-  overflow: hidden;
-`
-const Navbar = styled.div`
-  position:absolute;
-  top: 0;
-  z-index:200;
+const CuadradosStyled = styled.div`
+  width:100vw !important;
+  height:100vh !important;
+  overflow:hidden !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
 `
 const NotFoundPage = () => { 
   const isBrowser = typeof window !== "undefined";
   return (
     <Main>
       { isBrowser && (
-        <StyledCuadrados>
+        <CuadradosStyled>
           <LoadableCuadrado />
-        </StyledCuadrados>
+        </CuadradosStyled>
       )}
       <Text>
         <h1>NOT FOUND</h1>

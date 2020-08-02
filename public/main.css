@@ -13,6 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
     height: 100%;
     display: grid;
+    margin-top:3rem;
 }
 
 .flex-container{
@@ -224,6 +225,9 @@ font-family: 'Roboto', sans-serif;
     flex-direction:row;
 }
 @media (min-width: 600px){
+  body{
+    margin-top:0rem;
+  }
     .navbar{
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -382,6 +386,12 @@ font-family: 'Roboto', sans-serif;
     .flex-project p a {
         border-bottom:1px solid var(--blue-line);
         color:var(--blue-line);
+    }
+
+    canvas {
+      width:100vw !important;
+      height:100vh !important;
+      overflow:hidden !important;
     }
         
     }

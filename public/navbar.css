@@ -6,13 +6,14 @@
     --pink-line:#DC4596;
 } 
 .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    overflow: hidden;
-    background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  z-index: 222;
 }
 
 @media (min-width: 600px){
