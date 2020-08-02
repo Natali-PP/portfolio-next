@@ -3,10 +3,17 @@ import "../public/main.css"
 import '../public/navbar.css';
 //import ProyectButtonUrl from "./components/ProyectButtonUrl"
 import NavBar from '../components/navbar.js'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
     return (
-      <>
+      <>      
+        <Head>
+          <title>Portfolio - Natalí Palacio Pastor</title>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Head>
         <NavBar />
         <Component {...pageProps} />
       </>
