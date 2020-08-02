@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const ProyectsGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     margin: 0 2.5rem 0 3.5rem;
@@ -24,6 +24,12 @@ const ProyectsGrid = styled.div`
         font-size:1.25rem;
         font-family: 'Roboto';
         background-color:#FDC403;
+    }
+    @media (min-width:600px){
+      grid-template-columns: repeat(2, 1fr);
+    }    
+    @media (min-width:900px){
+      grid-template-columns: repeat(3, 1fr);
     }
 `
 const StyledImgProject = styled.img`
