@@ -13,7 +13,7 @@ const ReactDrumMachine = props => (
             <h1>React Drum Machine</h1>
             <h2>React, JS, CSS, HTML, Figma</h2>
             <div className="flex-dir-row">
-                <ProyectButtonUrl url="natali-pp.github.io/fcc-drum-machine/ " />
+                <ProyectButtonUrl url="https://natali-pp.github.io/FCC-drum-machine/ " />
                 <ButtonGithub url="https://github.com/Natali-PP/FCC-drum-machine" />
             </div>
           <StyledImg  src="/projects/react-drum-machine.png"  />
