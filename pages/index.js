@@ -129,7 +129,7 @@ const GridIntro = () => {
   //const {width} = useWindowSize();
   const isBrowser = typeof window !== "undefined";
   return(
-    <section id="me" class="grid-container">
+    <section id="me" className="grid-container">
       <h1 className="name1"> NATALI </h1> <br />                                             
       <h1 className="name2">PALACIO</h1>                                            
       <h1 className="name3">PASTOR</h1>                                            
