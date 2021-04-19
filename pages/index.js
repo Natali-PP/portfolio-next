@@ -141,11 +141,11 @@ const GridIntro = () => {
 
       )}
       <section className="me-description">    
-        <p>Hi! I’m a <span className="bold">Javascript</span> developer from Argentina, and I can help you build AWESOME web       
+        <p>Hi! I’m a <span className="bold">Front End</span> web developer from Argentina, and I can help you build AWESOME web       
           solutions. </p>                     
-        <p>I search to balance function and form</p>                              
-        <p>The technologies that I use are <span className="bold">HTML, CSS, Javascript, React</span> and <span                    
-          className="bold">Node.</span></p>         
+        <p>I search to balance function and form</p>  
+        <p>The technologies that I use are <span className="bold">React, Javascript, HTML, CSS</span> and <span                    
+          className="bold">Figma.</span></p>         
         <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><a><span   
           className="bold bold-blue">let’s talk!</span></a></Link></p>                         
       </section>                                                             
@@ -196,7 +196,7 @@ export default function Home(props) {
               <LoadableCuadrado />
             </CuadradosStyled>
           )}                               
-          <Text><StyledLink href="projects">Click here to see all my proyects</StyledLink></Text>
+          <Text><StyledLink href="projects"><a>Click here to see all my proyects</a></StyledLink></Text>
 
         </Main>
       </section>

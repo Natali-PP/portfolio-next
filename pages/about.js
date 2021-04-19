@@ -38,6 +38,20 @@ const CuadradosStyled = styled.div `
   height:300px;
   overflow:auto;
 `
+
+const AlataText = styled.p`
+  font-family: 'Alata', sans-serif;
+`
+
+const TitleJob = styled.div`
+  display:flex;
+  justify-content:left;
+  align-items:center;
+`
+
+const bold = styled.p`
+  font-weight:bold;
+`
 const Certificate = (props) => {
   return(
     <Education>
@@ -63,21 +77,50 @@ const AboutMe = () => {
         
         <Container>
             
-          <h3>About Me</h3>
-          <p>Hi! I'm Natalí</p>
-          <p> I'm from Argentina, Córdoba.</p>
+          <AlataText><h3>About Me</h3></AlataText>
+          <p>Hi! I'm Natalí 👋</p>
+          <p> I'm from Córdoba, Argentina.</p>
           <p>I'm a curious woman, and my interests are very diverse, from accesability to 3D graphics in the browser, from volunteer work to a new javascript library.</p>
-          <p>My curiosity leaded me to a peculiar path: I've studied cinema, and made a short film and tv documentary. I've studied Industrial Engenering at Universidad Nacional de Córdoba, started my own bussines related to 3D printing and finally a self-taught web developer.</p>
-          <p>I've also always been involved in my community. In the past I was a volunteer in various programs in a local organization to help children and young adults in their education. Today I'm a volunteer and part time mentor at MetLab Frontend, helping the women in MeT - Mujeres en Tecnología - a ONG that searches to enhance the impact and participation of women in various areas in IT.</p>
+          <p>I'm a self-taught web developer. I've studied Industrial Engenering at Universidad Nacional de Córdoba, and used to have my own bussines related to 3D printing.</p>
+          <p>I am currently studying the Data Science's University Diploma at UNC FAMAF</p>
+          <AlataText><h4>Skills</h4></AlataText>
+          <ul>
+            <li>React</li>
+            <li>Javascript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Git</li>
+            <li>Figma</li>
+          </ul>
+          <AlataText><h4>Interests & Hobbies</h4></AlataText>
+          <ul>
+            <li>Creative coding</li>
+            <li>Digital Art</li>
+            <li>Film and Series</li>
+          </ul>
+          <AlataText><h4>Volunteer and Social Work</h4></AlataText>
+          <p>I've also always been involved in my community. In the past I volunteered in various programs in a local organization to help children and young adults in their education. Today I'm a volunteer and part time mentor at MetLab Frontend, helping the women in MeT - Mujeres en Tecnología - an ONG that searches to enhance the impact and participation of women in various areas in IT.</p>
           <div>
-            <h3>Courses & Certificates</h3>
+            <AlataText><h3>Work Experience</h3></AlataText>
+            <div >
+              <TitleJob><AlataText>NeuralActions</AlataText><p style={{marginTop:"20px", marginLeft:"1rem"}}> <i>- Frontend Developer & UI Designer | 2020 - Today</i></p></TitleJob>
+              <p>I've <b>implemented</b> and <b>designed</b> the user interfaces, using Figma as a prototyping tool and build it using React as a Frontend library.</p>
+              <p>Created and implemented a custom design system.</p>
+              <p>Proposed and upgraded the coding standards  - like using functional components instead of class components in React.</p> 
+            </div>
+
+          </div>
+
+          <div>
+            <AlataText><h3>Courses & Certificates</h3></AlataText>
               <Certificate title="FreeCodeCamp: APIs & Microservices" link="https://www.freecodecamp.org/certification/natalipp/apis-and-microservices" />            
               <Certificate title="FreeCodeCamp: Front End Libraries" link="https://www.freecodecamp.org/certification/natalipp/front-end-libraries" />
               <Certificate title="FreeCodeCamp: JavaScript Algorithms and Data Structures" link="https://www.freecodecamp.org/certification/natalipp/javascript-algorithms-and-data-structures" />    
               <Certificate title="FreeCodeCamp: Responsive Web Design" link="https://www.freecodecamp.org/certification/natalipp/responsive-web-design" />
           </div>
           <div>
-            <h3>Activities</h3>
+            <AlataText><h3>Activities & Community</h3></AlataText>
+            <Event title="BootCamp Web 3rd Edition - MeT" type="Speaker/Teacher - 2020" />
             <Event title="MeTCamp UX/UI" type="Attendee - 2020" />
             <Event title="Hackatón WeGirlsHack MeT" type="Attendee - 2019" />
             <Event title="PyData Córdoba" type="Volunteer/Attendee - 2019"  />
