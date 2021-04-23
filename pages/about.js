@@ -89,10 +89,13 @@ const AboutMe = () => {
             <li>React</li>
             <li>Redux</li>
             <li>Javascript</li>
-            <li>CSS</li>
-            <li>HTML</li>
+            <li>Sass</li>
             <li>Git</li>
             <li>Figma</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>HTML</li>
           </ul>
           <AlataText><h4>Interests & Hobbies</h4></AlataText>
           <ul>
