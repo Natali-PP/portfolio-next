@@ -47,6 +47,15 @@ const Projects = props => (
         <h1>Projects</h1>
 
         <ProyectsGrid>
+            <Link href="./projects/students-vue">
+              <a>
+                <div>
+                    <ProyectText title="Students Vue" tecn="Vue, JS, CSS, HTML, Tailwind CSS" />
+                <StyledImgProject src="/projects/students-vue.png" />
+                </div>
+              </a>
+            </Link>
+
             <Link href="./projects/asistocovid">
               <a>
                 <div>
