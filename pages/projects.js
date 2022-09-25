@@ -47,6 +47,16 @@ const Projects = props => (
         <h1>Projects</h1>
 
         <ProyectsGrid>
+
+            <Link href="./projects/la-mirada-vegetal">
+              <a>
+                <div>
+                    <ProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
+                <StyledImgProject src="/projects/la-mirada-vegetal.png" />
+                </div>
+              </a>
+            </Link>
+
             <Link href="./projects/students-vue">
               <a>
                 <div>

@@ -1,0 +1,282 @@
+{
+  "../components/Cuadrados3D.js": [
+    {
+      "id": "./components/Cuadrados3D.js",
+      "name": "./components/Cuadrados3D.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/DOMRectReadOnly.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/DOMRectReadOnly.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObservation.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObservation.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObserver.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObserver.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObserverBoxOptions.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObserverBoxOptions.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObserverController.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObserverController.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObserverDetail.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObserverDetail.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/ResizeObserverEntry.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/ResizeObserverEntry.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/broadcastActiveObservations.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/broadcastActiveObservations.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/calculateBoxSize.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/calculateBoxSize.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/calculateDepthForNode.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/calculateDepthForNode.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/deliverResizeLoopError.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/deliverResizeLoopError.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/gatherActiveObservationsAtDepth.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/gatherActiveObservationsAtDepth.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/hasActiveObservations.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/hasActiveObservations.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/algorithms/hasSkippedObservations.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/algorithms/hasSkippedObservations.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/exports/resize-observer.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/exports/resize-observer.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/element.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/element.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/global.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/global.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/process.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/process.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/queueMicroTask.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/queueMicroTask.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/queueResizeObserver.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/queueResizeObserver.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/resizeObservers.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/resizeObservers.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@juggle/resize-observer/lib/utils/scheduler.js",
+      "name": "./node_modules/@juggle/resize-observer/lib/utils/scheduler.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/debounce/index.js",
+      "name": "./node_modules/debounce/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-merge-refs/dist/index.mjs",
+      "name": "./node_modules/react-merge-refs/dist/index.mjs",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-promise-suspense/build/index.js",
+      "name": "./node_modules/react-promise-suspense/build/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-promise-suspense/node_modules/fast-deep-equal/index.js",
+      "name": "./node_modules/react-promise-suspense/node_modules/fast-deep-equal/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-reconciler/cjs/react-reconciler.development.js",
+      "name": "./node_modules/react-reconciler/cjs/react-reconciler.development.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-reconciler/index.js",
+      "name": "./node_modules/react-reconciler/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-spring/three.js",
+      "name": "./node_modules/react-spring/three.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-three-fiber/node_modules/@babel/runtime/helpers/esm/extends.js",
+      "name": "./node_modules/react-three-fiber/node_modules/@babel/runtime/helpers/esm/extends.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-three-fiber/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "name": "./node_modules/react-three-fiber/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-three-fiber/web.js",
+      "name": "./node_modules/react-three-fiber/web.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/react-use-measure/dist/web.js",
+      "name": "./node_modules/react-use-measure/dist/web.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/scheduler/tracing.js",
+      "name": "./node_modules/scheduler/tracing.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/three/build/three.module.js",
+      "name": "./node_modules/three/build/three.module.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/tiny-emitter/index.js",
+      "name": "./node_modules/tiny-emitter/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/webpack/buildin/harmony-module.js",
+      "name": "./node_modules/webpack/buildin/harmony-module.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/webpack/buildin/module.js",
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "./dev/noop": [
+    {
+      "id": "./node_modules/next/dist/client/dev/noop.js",
+      "name": "./node_modules/next/dist/client/dev/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ]
+}

@@ -170,6 +170,14 @@ export default function Home(props) {
 
       <section>
         <h1>Some proyects</h1>
+
+        <Link href="projects/la-mirada-vegetal">
+          <a><FlexContainerColumnCenter>
+            <img src="/projects/la-mirada-vegetal.png" />
+            <PreviewProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
+          </FlexContainerColumnCenter></a>
+        </Link>
+
         <Link href="projects/asistocovid">
           <a><FlexContainerColumnCenter>
             <PreviewProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
@@ -184,19 +192,13 @@ export default function Home(props) {
           </FlexContainerColumnCenter></a>
         </Link>
 
-        <Link href="projects/mern-excercise-tracker">
-          <a><FlexContainerColumnCenter>
-            <PreviewProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
-            <img src="/projects/mern-tracker.png" />
-          </FlexContainerColumnCenter></a>
-        </Link>
         <Main>
           { isBrowser && (
             <CuadradosStyled>
               <LoadableCuadrado />
             </CuadradosStyled>
           )}                               
-          <Text><StyledLink href="projects"><a>Click here to see all my proyects</a></StyledLink></Text>
+          <Text><StyledLink href="projects"><a>Click here to see all my projects</a></StyledLink></Text>
 
         </Main>
       </section>
