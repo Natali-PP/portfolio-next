@@ -7,10 +7,6 @@ import styled from "styled-components"
 import Loadable from "react-loadable"
 import Media from 'react-media';
 
-
-
-//
-//
 const loader = () => <div>Loading threejs...</div>
 //
 // a component that will be defered to be rendered only on client side.
@@ -53,7 +49,7 @@ const FlexContainerColumnCenter = styled.div`
         font-family: 'Roboto';
         background-color:var(--yelow-line);
     }
-    img {
+    img, video {
       max-width:50%;
     }
 `
@@ -126,7 +122,6 @@ const PreviewProyectText = props => (
 
 
 const GridIntro = () => {
-  //const {width} = useWindowSize();
   const isBrowser = typeof window !== "undefined";
   return(
     <section id="me" className="grid-container">
@@ -144,7 +139,7 @@ const GridIntro = () => {
         <p>Hi! I’m a <span className="bold">Front End</span> web developer from Argentina, and I can help you build AWESOME web       
           solutions. </p>                     
         <p>I search to balance function and form</p>  
-        <p>The technologies that I use are <span className="bold">React, Javascript, HTML, CSS</span> and <span                    
+        <p>The technologies that I use are <span className="bold">React, Javascript, Three.js, HTML, CSS</span> and <span                    
           className="bold">Figma.</span></p>         
         <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><a><span   
           className="bold bold-blue">let’s talk!</span></a></Link></p>                         
@@ -152,15 +147,6 @@ const GridIntro = () => {
     </section>
 
   )};
-
-/* export default function Home(props) {
-  return (
-    <div className="container">
-      
-      
-    </div>
-  )
-} */
 
 export default function Home(props) {
   const isBrowser = typeof window !== "undefined";
@@ -180,15 +166,15 @@ export default function Home(props) {
 
         <Link href="projects/asistocovid">
           <a><FlexContainerColumnCenter>
-            <PreviewProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
-            <img src="/projects/asistocovid.png" alt="asistocovid-image" />
+            <PreviewProyectText title="3D Shoe Customizer" tecn="React, Three.js, JS, CSS, Framer Motion 3D" />
+            <video src="/projects/3d-shoe.mp4" autoPlay loop={true} />
           </FlexContainerColumnCenter></a>
         </Link>
 
-        <Link href="projects/animated-city-landing">
+        <Link href="projects/3d-button">
           <a><FlexContainerColumnCenter>
-            <img src="/projects/animated-city.png" alt="animated-city-landing-image" />
-            <PreviewProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
+            <video src="/projects/button-3d.mp4" autoPlay loop={true} />
+            <PreviewProyectText title="3D Microinteraction" tecn="React, Three.js, JS, CSS, Framer Motion 3D" />
           </FlexContainerColumnCenter></a>
         </Link>
 

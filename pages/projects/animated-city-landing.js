@@ -3,7 +3,7 @@ import ProyectButtonUrl from "../../components/ProyectButtonUrl.js"
 import ButtonGithub from "../../components/ProyectGithub"
 import styled from "styled-components"
 
-const StyledLogo = styled.img`
+const StyledVideoProject = styled.video`
   max-width:85%;
 `
 const animatedCityLanding = props => (
@@ -14,7 +14,7 @@ const animatedCityLanding = props => (
                 <ProyectButtonUrl url="https://natali-pp.github.io/future-city-animated/" />
                 <ButtonGithub url="https://github.com/Natali-PP/future-city-animated" />
             </div>
-          <StyledLogo src="/projects/animated-city.png" />
+          <StyledVideoProject src="/projects/city.mp4"  autoPlay loop={true} />
           
         </div>
 )

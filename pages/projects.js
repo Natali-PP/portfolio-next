@@ -35,6 +35,9 @@ const ProyectsGrid = styled.div`
 const StyledImgProject = styled.img`
   max-width:100%;
 `
+const StyledVideoProject = styled.video`
+  max-width:100%;
+`
 const ProyectText = props => (
     <div>
         <h1>{props.title}</h1>
@@ -47,122 +50,138 @@ const Projects = props => (
         <h1>Projects</h1>
 
         <ProyectsGrid>
+            <Link href="./projects/3d-button">
+                <a>
+                    <div>
+                        <ProyectText title="3D Microinteraction" tecn="React, Three.js, JS, CSS, Framer Motion 3D" />
+                        <StyledVideoProject src="/projects/button-3d.mp4" type="video/mp4" autoPlay loop={true} />
+                    </div>
+                </a>
+            </Link>
+            <Link href="./projects/3d-shoe-customizer">
+                <a>
+                    <div>
+                        <ProyectText title="3D Shoe Customizer" tecn="React, Three.js, JS, CSS, HTML, Chackra UI, Framer Motion" />
+                        <StyledVideoProject src="/projects/3d-shoe.mp4" type="video/mp4" autoPlay loop={true} />
+                    </div>
+                </a>
+            </Link>
 
             <Link href="./projects/la-mirada-vegetal">
-              <a>
-                <div>
-                    <ProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
-                <StyledImgProject src="/projects/la-mirada-vegetal.png" />
-                </div>
-              </a>
+                <a>
+                    <div>
+                        <ProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
+                        <StyledImgProject src="/projects/la-mirada-vegetal.png" />
+                    </div>
+                </a>
             </Link>
 
             <Link href="./projects/students-vue">
-              <a>
-                <div>
-                    <ProyectText title="Students Vue" tecn="Vue, JS, CSS, HTML, Tailwind CSS" />
-                <StyledImgProject src="/projects/students-vue.png" />
-                </div>
-              </a>
+                <a>
+                    <div>
+                        <ProyectText title="Students Vue" tecn="Vue, JS, CSS, HTML, Tailwind CSS" />
+                        <StyledImgProject src="/projects/students-vue.png" />
+                    </div>
+                </a>
             </Link>
 
             <Link href="./projects/asistocovid">
-              <a>
-                <div>
-                    <ProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
-                <StyledImgProject src="/projects/asistocovid.png" />
-                </div>
-              </a>
+                <a>
+                    <div>
+                        <ProyectText title="Asistocovid" tecn="React, Angular, JS, CSS, HTML, Figma" />
+                        <StyledImgProject src="/projects/asistocovid.png" />
+                    </div>
+                </a>
             </Link>
 
             <Link href="./projects/animated-city-landing">
-              <a>
-                <div>
-                  <ProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
-                  <StyledImgProject src="/projects/animated-city.png" />
-                </div>
-              </a>
+                <a>
+                    <div>
+                        <ProyectText title="Animated City Landing" tecn="JS, GSAP, CSS, HTML, Figma" />
+                        <StyledVideoProject src="/projects/city.mp4" type="video/mp4" autoPlay loop={true} />
+                    </div>
+                </a>
             </Link>
 
             <Link href="./projects/mern-excercise-tracker">
-              <a>
-                <div>
-                  <ProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
-                  <StyledImgProject src="/projects/mern-tracker.png" />
-                </div>
-              </a>
+                <a>
+                    <div>
+                        <ProyectText title="MERN Excercise Tracker" tecn="MongoDB, Node, Express, React, Material-UI" />
+                        <StyledImgProject src="/projects/mern-tracker.png" />
+                    </div>
+                </a>
             </Link>
 
             <Link href="./projects/react-drum-machine">
-              <a><div>
-                <ProyectText title="React Drum Machine" tecn="React, JS, CSS, HTML, Figma"/>
-                <StyledImgProject src="/projects/react-drum-machine.png" />
-              </div></a>
+                <a><div>
+                    <ProyectText title="React Drum Machine" tecn="React, JS, CSS, HTML, Figma"/>
+                    <StyledImgProject src="/projects/react-drum-machine.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/react-quote-machine">
-              <a><div>
+                <a><div>
                     <ProyectText title="React Random Quote" tecn="React, JS, CSS, HTML, Figma"/>
-                <StyledImgProject src="/projects/random-quote-machine.png" />
-              </div></a>
+                    <StyledImgProject src="/projects/random-quote-machine.png" />
+                </div></a>
             </Link>
             <Link href="./projects/react-pomodoro-clock">
-              <a><div>
+                <a><div>
                     <ProyectText title="React Pomodoro Clock" tecn="React, JS, CSS, HTML"/>
-                <StyledImgProject src="/projects/pomodoro-clock.png" />
-              </div></a>
+                    <StyledImgProject src="/projects/pomodoro-clock.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/bootcamp-met">
-              <a><div>
+                <a><div>
                     <ProyectText title="MeT's Bootcamp Landing" tecn="JS, CSS, HTML, Zeplin"/>
-                <StyledImgProject src="/projects/bootcamp-web-met.png" />
-              </div></a>
+                    <StyledImgProject src="/projects/bootcamp-web-met.png" />
+                </div></a>
             </Link>
             <Link href="./projects/drum-vainilla-js">
-              <a><div>
+                <a><div>
                     <ProyectText title="JS Drum Machine" tecn="JS, CSS, HTML"/>
-                <StyledImgProject src="/projects/little-drum-vainillajs.png" />
-              </div></a>
+                    <StyledImgProject src="/projects/little-drum-vainillajs.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/personal-blog">
-              <a><div>
+                <a><div>
                     <ProyectText title="Personal Blog" tecn="Hugo, Go"/>
-                <StyledImgProject src="/projects/personal-blog-hugo.png" />
-              </div></a>
+                    <StyledImgProject src="/projects/personal-blog-hugo.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/js-calculator">
-              <a><div>
-                <ProyectText title="React Calculator" tecn="React, JS, CSS, HTML"/>
-                <StyledImgProject src="/projects/calculator.png" />
-              </div></a>
+                <a><div>
+                    <ProyectText title="React Calculator" tecn="React, JS, CSS, HTML"/>
+                    <StyledImgProject src="/projects/calculator.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/grid-layout-css">
-              <a><div>
-                <ProyectText title="Grid Layout Blog" tecn="CSS, HTML"/>
-                <StyledImgProject src="/projects/gridblog.png" />
-              </div></a>
+                <a><div>
+                    <ProyectText title="Grid Layout Blog" tecn="CSS, HTML"/>
+                    <StyledImgProject src="/projects/gridblog.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/taco-bar">
-              <a><div>
-                <ProyectText title="Taco Bar Layout" tecn="CSS, HTML"/>
-                <StyledImgProject src="/projects/taco-bar.png" />
-              </div></a>
+                <a><div>
+                    <ProyectText title="Taco Bar Layout" tecn="CSS, HTML"/>
+                    <StyledImgProject src="/projects/taco-bar.png" />
+                </div></a>
             </Link>
 
             <Link href="./projects/js-documentation-page">
-              <a><div>
-                <ProyectText title="Javascript Documentation Page" tecn="CSS, HTML"/>
-                <StyledImgProject src="/projects/js-documentation.png" />
-              </div></a>
+                <a><div>
+                    <ProyectText title="Javascript Documentation Page" tecn="CSS, HTML"/>
+                    <StyledImgProject src="/projects/js-documentation.png" />
+                </div></a>
             </Link>
 
         </ProyectsGrid>
-        
+
     </>
 );
 
