@@ -164,7 +164,7 @@ export default function Home(props) {
           </FlexContainerColumnCenter></a>
         </Link>
 
-        <Link href="projects/asistocovid">
+        <Link href="projects/3d-shoe-customizer">
           <a><FlexContainerColumnCenter>
             <PreviewProyectText title="3D Shoe Customizer" tecn="React, Three.js, JS, CSS, Framer Motion 3D" />
             <video src="/projects/3d-shoe.mp4" autoPlay loop={true} />
