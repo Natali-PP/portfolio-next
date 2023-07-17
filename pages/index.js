@@ -11,8 +11,8 @@ const loader = () => <div>Loading threejs...</div>
 //
 // a component that will be defered to be rendered only on client side.
 const LoadableCuadrado = Loadable({
- loader : () => import('../components/Cuadrados3D.js'), // imports the component with the three.js and allows use of it safely
- loading: loader,
+  loader: () => import('../components/Cuadrados3D.js'), // imports the component with the three.js and allows use of it safely
+  loading: loader,
 })
 
 
@@ -92,13 +92,13 @@ class ProyectRepeat extends React.Component {
   render() {
     return (
       <>
-        <Media queries= {{ small: {maxWidth: 599} }}>
-          {matches => 
-              matches.small ? (
-                <h1 className="portfolio">Portfolio <br /></h1>
-              ) : (
-                <h1 className="portfolio">Portfolio <br />Portfolio <br/> Portfolio <br/></h1>
-              )
+        <Media queries={{ small: { maxWidth: 599 } }}>
+          {matches =>
+            matches.small ? (
+              <h1 className="portfolio">Portfolio <br /></h1>
+            ) : (
+              <h1 className="portfolio">Portfolio <br />Portfolio <br /> Portfolio <br /></h1>
+            )
           }
         </Media>
       </>
@@ -106,47 +106,48 @@ class ProyectRepeat extends React.Component {
   }
 }
 
-const loaderProyect = () => 
-            <h1 className="portfolio">Portfolio</h1>;
+const loaderProyect = () =>
+  <h1 className="portfolio">Portfolio</h1>;
 
 const LoadableRepeatProyect = Loadable({
   loader: () => <ProyectRepeat />,
   loading: loaderProyect,
 })
 const PreviewProyectText = props => (
-    <div>
-        <h1>{props.title}</h1>
-        <h2>{props.tecn}</h2>
-    </div>
+  <div>
+    <h1>{props.title}</h1>
+    <h2>{props.tecn}</h2>
+  </div>
 );
 
 
 const GridIntro = () => {
   const isBrowser = typeof window !== "undefined";
-  return(
+  return (
     <section id="me" className="grid-container">
-      <h1 className="name1"> NATALI </h1> <br />                                             
-      <h1 className="name2">PALACIO</h1>                                            
-      <h1 className="name3">PASTOR</h1>                                            
-      <div className="red-line"></div>                                             
-      <div className="blue-line"></div>                                        
-      <div className="yellow-line"></div>                                           
-      { isBrowser && (
+      <h1 className="name1"> NATALI </h1> <br />
+      <h1 className="name2">PALACIO</h1>
+      <h1 className="name3">PASTOR</h1>
+      <div className="red-line"></div>
+      <div className="blue-line"></div>
+      <div className="yellow-line"></div>
+      {isBrowser && (
         <ProyectRepeat />
 
       )}
-      <section className="me-description">    
-        <p>Hi! I’m a <span className="bold">Front End</span> web developer from Argentina, and I can help you build AWESOME web       
-          solutions. </p>                     
-        <p>I search to balance function and form</p>  
-        <p>The technologies that I use are <span className="bold">React, Javascript, Three.js, HTML, CSS</span> and <span                    
-          className="bold">Figma.</span></p>         
-        <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><a><span   
-          className="bold bold-blue">let’s talk!</span></a></Link></p>                         
-      </section>                                                             
+      <section className="me-description">
+        <p>Hi! I’m a <span className="bold">Front End</span> web developer from Argentina, and I can help you build AWESOME web
+          solutions. </p>
+        <p>I search to balance function and form</p>
+        <p>The technologies that I use are <span className="bold">React, Javascript, Three.js, HTML, CSS</span> and <span
+          className="bold">Figma.</span></p>
+        <p>Here you can see what i’ve built. If you are interested, <Link href="contact"><a><span
+          className="bold bold-blue">let’s talk!</span></a></Link></p>
+      </section>
     </section>
 
-  )};
+  )
+};
 
 export default function Home(props) {
   const isBrowser = typeof window !== "undefined";
@@ -157,10 +158,10 @@ export default function Home(props) {
       <section>
         <h1>Some proyects</h1>
 
-        <Link href="projects/la-mirada-vegetal">
+        <Link href="projects/3d-monsters-card">
           <a><FlexContainerColumnCenter>
-            <img src="/projects/la-mirada-vegetal.png" />
-            <PreviewProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
+            <video src="/projects/3d-monsters-cards.mp4" autoPlay loop={true} />
+            <PreviewProyectText title="3D Monsters Cards" tecn="React, Three.js, R3F, Next.js , Zustand, JS, CSS, Framer Motion" />
           </FlexContainerColumnCenter></a>
         </Link>
 
@@ -171,19 +172,26 @@ export default function Home(props) {
           </FlexContainerColumnCenter></a>
         </Link>
 
+        <Link href="projects/la-mirada-vegetal">
+          <a><FlexContainerColumnCenter>
+            <img src="/projects/la-mirada-vegetal.png" />
+            <PreviewProyectText title="La Mirada Vegetal" tecn="React, Three.js, JS, CSS, HTML, Figma" />
+          </FlexContainerColumnCenter></a>
+        </Link>
+
         <Link href="projects/3d-button">
           <a><FlexContainerColumnCenter>
-            <video src="/projects/button-3d.mp4" autoPlay loop={true} />
             <PreviewProyectText title="3D Microinteraction" tecn="React, Three.js, JS, CSS, Framer Motion 3D" />
+            <video src="/projects/button-3d.mp4" autoPlay loop={true} />
           </FlexContainerColumnCenter></a>
         </Link>
 
         <Main>
-          { isBrowser && (
+          {isBrowser && (
             <CuadradosStyled>
               <LoadableCuadrado />
             </CuadradosStyled>
-          )}                               
+          )}
           <Text><StyledLink href="projects"><a>Click here to see all my projects</a></StyledLink></Text>
 
         </Main>
@@ -196,4 +204,5 @@ export default function Home(props) {
 
 
     </>
-  )};
+  )
+};
