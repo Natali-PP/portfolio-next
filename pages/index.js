@@ -135,17 +135,22 @@ const GridIntro = () => {
       {isBrowser && <ProyectRepeat />}
       <section className="me-description">
         <p>
-          Hi! I’m a <span className="bold">Front End</span> web developer from
-          Argentina, and I can help you build AWESOME web solutions.{" "}
+          Hi! I’m a <span className="bold"> Senior Frontend Developer</span>
         </p>
-        <p>I search to balance function and form</p>
         <p>
-          The technologies that I use are{" "}
-          <span className="bold">React, Javascript, Three.js, HTML, CSS</span>{" "}
+          I have expertise in{" "}
+          <span className="bold">
+            React, TypeScript, JavaScript, Three.js, Mapbox,
+          </span>{" "}
           and <span className="bold">Figma.</span>
         </p>
         <p>
-          Here you can see what i’ve built. If you are interested,{" "}
+          With over 4 years of experience, I can help you build exceptional web
+          solutions.
+        </p>
+
+        <p>
+          Take a look at my work, and if you're interested in collaborating,{" "}
           <Link href="contact">
             <a>
               <span className="bold bold-blue">let’s talk!</span>
@@ -211,7 +216,7 @@ export default function Home(props) {
             <FlexContainerColumnCenter>
               <PreviewProyectText
                 title="3D Microinteraction"
-                tecn="React, Three.js, JS, CSS, Framer Motion 3D"
+                tecn="React, Three.js, JS, CSS, Framer Motion"
               />
               <video src="/projects/button-3d.mp4" autoPlay loop={true} />
             </FlexContainerColumnCenter>
